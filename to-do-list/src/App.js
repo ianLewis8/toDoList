@@ -4,11 +4,40 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Welcome to the To-Do List App!
-        </p>
-      </header>
+      <body>
+        <div id="page home">
+          <div id="navbar" class>
+            <div id="navleft" class>
+              <button id="home">
+                <p>
+                  Home
+                </p>
+              </button>
+            </div>
+            <div id="navmid" class>
+              Search Bar
+            </div>
+            <div id="navright" class>
+              Nav buttons
+            </div>
+          </div>
+          <div id="app">
+            <div top>
+              <button id="newTask">
+                <p>
+                  + Add Task
+                </p>
+              </button>
+            </div>
+            <div mid>
+
+            </div>
+            <div bottom>
+
+            </div>
+          </div>
+        </div>
+      </body>
     </div>
   );
 }
