@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -6,21 +6,19 @@ function App() {
     <div className="App">
       <body>
         <div id="page home">
+
           <div id="navbar" class>
-            <div id="navleft" class>
-              <button id="home">
-                <p>
-                  Home
-                </p>
-              </button>
-            </div>
-            <div id="navmid" class>
-              Search Bar
-            </div>
-            <div id="navright" class>
-              Nav buttons
-            </div>
+            <a href="#" class="home">Home</a>
+            <a class="searchBar">Search Bar</a>
+
+            <nav class="buttons">
+              <a href="#">Settings</a>
+              <a href="#">Help</a>
+              <a href="#">Account</a>
+            </nav>
           </div>
+
+
           <div id="app">
             <div top>
               <button id="newTask">
@@ -36,6 +34,7 @@ function App() {
 
             </div>
           </div>
+
         </div>
       </body>
     </div>
