@@ -1,4 +1,4 @@
-//import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
 function App() {
@@ -7,17 +7,18 @@ function App() {
       <body>
         <div id="page home">
 
-          <header class="navbar">
-            <a href="#" class="home">Home</a>
-            <a class="searchBar">Search Bar</a>
-
-            <nav class="buttons">
-              <a href="#">Settings </a>
-              <a href="#">Help </a>
+          <div id="navbar" className="navbar">
+            <a href="#" className="home">Home</a>
+            <div className="searchBar">
+              <input type="text" placeholder="Search..." />
+              <button type="submit">Search</button>
+            </div>
+            <nav className="buttons">
+              <a href="#">Settings</a>
+              <a href="#">Help</a>
               <a href="#">Account</a>
             </nav>
-          </header>
-
+          </div>
 
           <div id="app">
             <div top>
