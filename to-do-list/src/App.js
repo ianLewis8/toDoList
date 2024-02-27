@@ -8,11 +8,17 @@ function App() {
         <div id="page home">
 
           <div id="navbar" className="navbar">
-            <a href="#" className="home">Home</a>
+            <nav className="buttons">
+              <a href="#">Home</a>
+              <a href="#">Task List</a>
+              <a href="#">Calendar</a>
+            </nav>
+
             <div className="searchBar">
               <input type="text" placeholder="Search..." />
               <button type="submit">Search</button>
             </div>
+
             <nav className="buttons">
               <a href="#">Settings</a>
               <a href="#">Help</a>

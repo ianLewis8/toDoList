@@ -64,13 +64,22 @@ body {
   left: 0;
 }
 
-.buttons a {
+.home {
   position: relative;
   font-size: 18px;
   color: red;
   font-weight: 750;
   text-decoration: none;
   margin: 5px;
+}
+
+.buttons a {
+  position: relative;
+  font-size: 18px;
+  color: red;
+  font-weight: 750;
+  text-decoration: none;
+  margin: 10px;
 }
 
 .buttons a::before {
