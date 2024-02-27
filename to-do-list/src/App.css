@@ -100,7 +100,7 @@ body {
 .searchBar {
   display: flex;
   align-items: center;
-  margin-left: 160px;
+  margin-left: 16 0px;
 }
 
 .searchBar input[type="text"] {
