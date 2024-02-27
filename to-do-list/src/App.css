@@ -1,6 +1,8 @@
 * {
   font-family: "Poppings", sans-serif;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -50,15 +52,13 @@ body {
   background-position: center;
 }
 
-#navbar {
-  background: #d6001c;
-  position: fixed;
-  display: flex;
-  flex-direction: column;
+.navbar {
+  position: fixed; 
   justify-content: space-between;
   align-items: center;
-  top: -1px;
-  padding: 1%;
+  display: flex;
+  top: 0;
+  padding: 75px 200px;
   z-index: 100;
   width: 100%;
   left: 0;

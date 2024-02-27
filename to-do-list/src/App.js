@@ -7,16 +7,16 @@ function App() {
       <body>
         <div id="page home">
 
-          <div id="navbar" class>
+          <header class="navbar">
             <a href="#" class="home">Home</a>
             <a class="searchBar">Search Bar</a>
 
             <nav class="buttons">
-              <a href="#">Settings</a>
-              <a href="#">Help</a>
+              <a href="#">Settings </a>
+              <a href="#">Help </a>
               <a href="#">Account</a>
             </nav>
-          </div>
+          </header>
 
 
           <div id="app">
