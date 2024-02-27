@@ -52,6 +52,9 @@ body {
   background-position: center;
 }
 
+
+
+
 .navbar {
   position: fixed; 
   justify-content: space-between;
@@ -92,9 +95,12 @@ body {
   color: seagreen;
 }
 
+
+/*-------------Search Bar----------------*/
 .searchBar {
   display: flex;
   align-items: center;
+  margin-left: 160px;
 }
 
 .searchBar input[type="text"] {
@@ -116,3 +122,5 @@ body {
 .searchBar button:hover {
   background-color: darkred;
 }
+/*---------------------------------------*/
+
