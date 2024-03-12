@@ -109,7 +109,6 @@ body {
 .searchBar {
   display: flex;
   align-items: center;
-  margin-left: 16 0px;
 }
 
 .searchBar input[type="text"] {
