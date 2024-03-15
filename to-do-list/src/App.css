@@ -6,8 +6,19 @@
 }
 
 
-.App {
-  text-align: center;
+.app {
+  background: #cccccc;
+  position: fixed; 
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  top: 0;
+  /*padding: 5% 2%;*/
+  margin: 10% 5%; 
+  z-index: 50;
+  width: 90%;
+  left: 0;
+  height: 75%;
 }
 
 .App-logo {
@@ -49,11 +60,8 @@ body {
   min-height: 100vh;
   background: url('rpi.png') no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center; 
 }
-
-
-
 
 .navbar {
   position: fixed; 
@@ -61,10 +69,28 @@ body {
   align-items: center;
   display: flex;
   top: 0;
-  padding: 5% 10%;
+  background: white;
+  margin: 4% 5%;
+  padding: 29px;
+  
   z-index: 100;
-  width: 100%;
+  width: 90%;
   left: 0;
+}
+
+.newTask {
+  background: #cccccc;
+  position: fixed; 
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  top: 0;
+  /*padding: 5% 2%;*/
+  margin: 10% 5%; 
+  z-index: 100;
+  width: 90%;
+  left: 0;
+  height: 75%;
 }
 
 .home {
@@ -100,9 +126,6 @@ body {
   width: 100%;
 }
 
-.app {
-  color: seagreen;
-}
 
 
 /*-------------Search Bar----------------*/

@@ -26,13 +26,9 @@ function App() {
             </nav>
           </div>
 
-          <div id="app">
-            <div top>
-              <button id="newTask">
-                <p>
-                  + Add Task
-                </p>
-              </button>
+          <div id="app" className="app">
+            <div className="newTask">
+              
             </div>
             <div mid>
 
