@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   Outlet,
+  Link,
 } from "react-router-dom";
 
 import './App.css';
@@ -18,9 +19,9 @@ function App() {
       <div className="page">
         <div id="navbar" className="navbar">
           <nav className="buttons">
-            <a href="#"><img src={homered} height='40' width='40' alt="Home" /></a>
-            <a href="#"><img src={tasklist} height='40' width='40' alt="Task List" /></a>
-            <a href="#"><img src={calendar} height='40' width='40' alt="Calendar" /></a>
+            <Link to="/"><img src={homered} height='40' width='40' alt="Home" /></Link>
+            <Link to="/"><img src={tasklist} height='40' width='40' alt="Task List" /></Link>
+            <Link to="/"><img src={calendar} height='40' width='40' alt="Calendar" /></Link>
           </nav>
 
           <div className="searchBar">
@@ -29,40 +30,10 @@ function App() {
           </div>
 
           <nav className="buttons">
-            <a href="#"><img src={settings} height='40' width='40' alt="Settings" /></a>
-            <a href="#"><img src={help} height='40' width='40' alt="Help" /></a>
-            <a href="#"><img src={account} height='40' width='40' alt="Account" /></a>
+            <Link to="/settings"><img src={settings} height='40' width='40' alt="Settings" /></Link>
+            <Link to="/"><img src={help} height='40' width='40' alt="Help" /></Link>
+            <Link to="/"><img src={account} height='40' width='40' alt="Account" /></Link>
           </nav>
-        </div>
-        <div>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
-          <h2>Hello</h2>
         </div>
         <Outlet />
       </div>
