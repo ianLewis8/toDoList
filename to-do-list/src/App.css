@@ -18,7 +18,6 @@
   z-index: 50;
   width: 90%;
   left: 0;
-  height: 75%;
 }
 
 .App-logo {
@@ -57,25 +56,35 @@
 }
 
 body {
-  min-height: 100vh;
-  background: url('rpi.png') no-repeat;
+  background: url('rpi.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   background-position: center; 
 }
 
+.page {
+  position: static; 
+  justify-content: space-between;
+  align-items: center;
+  display: inline-block;
+  top: 0;
+  background: white;
+  margin: 5%;
+  z-index: 100;
+  width: 90%;
+}
+
 .navbar {
-  position: fixed; 
+  background: white;
+  position: sticky; 
   justify-content: space-between;
   align-items: center;
   display: flex;
-  top: 0;
-  background: white;
-  margin: 4% 5%;
-  padding: 29px;
-  
+  /*
+  padding: 30px;
   z-index: 100;
-  width: 90%;
-  left: 0;
+  */
 }
 
 .newTask {

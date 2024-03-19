@@ -5,15 +5,37 @@ import {
   RouterProvider,
   Route,
   Link,
+  Outlet,
 } from "react-router-dom";
+
 import './index.css';
+
 import App from './App';
+import Home from './home';
+import Settings from './Settings';
 import reportWebVitals from './reportWebVitals';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: "settings",
+        element: <Settings />,
+      }
+    ]
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
