@@ -1,17 +1,12 @@
 import React from 'react';
-import {
-  Outlet,
-  Link,
-} from "react-router-dom";
-
+import { Outlet, Link } from "react-router-dom";
 import './App.css';
-
-import homered from './homered.png'; 
+import homered from './homered.png';
 import tasklist from './bulletred.png';
 import calendar from './calendarred.png';
 import settings from './gear.png';
 import help from './questionmark.jpg';
-import account from'./personicon.webp';
+import account from './personicon.webp';
 
 function App() {
   return (
@@ -20,8 +15,8 @@ function App() {
         <div id="navbar" className="navbar">
           <nav className="buttons">
             <Link to="/"><img src={homered} height='40' width='40' alt="Home" /></Link>
-            <Link to="/"><img src={tasklist} height='40' width='40' alt="Task List" /></Link>
-            <Link to="/"><img src={calendar} height='40' width='40' alt="Calendar" /></Link>
+            <Link to="/tasks"><img src={tasklist} height='40' width='40' alt="Task List" /></Link>
+            <Link to="/calendar"><img src={calendar} height='40' width='40' alt="Calendar" /></Link>
           </nav>
 
           <div className="searchBar">
@@ -31,8 +26,8 @@ function App() {
 
           <nav className="buttons">
             <Link to="/settings"><img src={settings} height='40' width='40' alt="Settings" /></Link>
-            <Link to="/"><img src={help} height='40' width='40' alt="Help" /></Link>
-            <Link to="/"><img src={account} height='40' width='40' alt="Account" /></Link>
+            <Link to="/help"><img src={help} height='40' width='40' alt="Help" /></Link>
+            <Link to="/account"><img src={account} height='40' width='40' alt="Account" /></Link>
           </nav>
         </div>
         <Outlet />
