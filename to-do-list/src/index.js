@@ -12,7 +12,11 @@ import './index.css';
 
 import App from './App';
 import Home from './home';
+import TaskList from './TaskList';
+import Calendar from './calendar';
 import Settings from './Settings';
+import Help from './help';
+import Account from './account';
 import reportWebVitals from './reportWebVitals';
 
 const router = createBrowserRouter([
@@ -27,6 +31,22 @@ const router = createBrowserRouter([
       {
         path: "settings",
         element: <Settings />,
+      },
+      {
+        path: "tasklist",
+        element: <TaskList />
+      },
+      {
+        path: "calendar",
+        element: <Calendar /> 
+      },
+      {
+        path: "help", 
+        element: <Help />
+      },
+      {
+        path: "account",
+        element: <Account />
       }
     ]
   },
