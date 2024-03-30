@@ -15,7 +15,7 @@ function App() {
         <div id="navbar" className="navbar">
           <nav className="buttons">
             <Link to="/"><img src={homered} height='40' width='40' alt="Home" /></Link>
-            <Link to="/tasks"><img src={tasklist} height='40' width='40' alt="Task List" /></Link>
+            <Link to="/tasklist"><img src={tasklist} height='40' width='40' alt="Task List" /></Link>
             <Link to="/calendar"><img src={calendar} height='40' width='40' alt="Calendar" /></Link>
           </nav>
 
