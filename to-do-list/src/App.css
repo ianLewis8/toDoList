@@ -1,62 +1,31 @@
 * {
-  font-family: "Poppings", sans-serif;
+  font-family: "Segoe", sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-
+/*
 .app {
-  background: #cccccc;
+  background-color: black;
   position: fixed; 
   justify-content: space-between;
   align-items: center;
   display: flex;
-  top: 0;
-  /*padding: 5% 2%;*/
-  margin: 10% 5%; 
-  z-index: 50;
-  width: 90%;
-  left: 0;
+  z-index: 0;
+  background-size: cover;
 }
-
+*/
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 body {
-  background: url('rpi.png');
+  background-color: #FFFFFF;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -69,34 +38,21 @@ body {
   align-items: center;
   display: inline-block;
   top: 0;
-  background: white;
-  margin: 5%;
+  margin: 0;
   z-index: 100;
-  width: 90%;
+  width: 100%;
+  height: 100%;
 }
 
 .navbar {
-  background: white;
+  background: #F20505;
   position: sticky;
   justify-content: space-between;
   align-items: center;
   display: flex;
   padding: 10px 0; 
-}
-
-.newTask {
-  background: #cccccc;
-  position: fixed; 
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-  top: 0;
-  /*padding: 5% 2%;*/
-  margin: 10% 5%; 
-  z-index: 100;
-  width: 90%;
-  left: 0;
-  height: 75%;
+  border-bottom: 2px solid lightgray;
+  z-index: 150;
 }
 
 .home {
