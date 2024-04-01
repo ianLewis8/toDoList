@@ -1,0 +1,14 @@
+.newTask {
+  background: #f29ba2;
+  justify-content: center;
+  display: flex;
+  top: 0;
+  padding: 5%;
+  border-right: 1px solid darkred;
+  z-index: 200;
+  width: 20vw;
+}
+
+.newTask + .page {
+  grid-column: span 1;
+}

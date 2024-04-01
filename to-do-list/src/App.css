@@ -1,111 +1,61 @@
 * {
-  font-family: "Poppings", sans-serif;
+  font-family: "Segoe", sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 
-.app {
-  background: #cccccc;
-  position: fixed; 
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-  top: 0;
-  /*padding: 5% 2%;*/
-  margin: 10% 5%; 
-  z-index: 50;
-  width: 90%;
-  left: 0;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 body {
-  background: url('rpi.png');
+  background-color: #FFFFFF;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center; 
 }
 
-.page {
-  position: static; 
-  justify-content: space-between;
-  align-items: center;
-  display: inline-block;
-  top: 0;
-  background: white;
-  margin: 5%;
+.App {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  flex-direction: column;
+  margin: 0;
   z-index: 100;
-  width: 90%;
+  width: 100%;
+  height: 100vh;
+}
+
+.page {
+  grid-column: span 2;
+  overflow: auto;
 }
 
 .navbar {
-  background: white;
+  grid-column: span 2;
+  background: #F20505;
   position: sticky;
   justify-content: space-between;
   align-items: center;
   display: flex;
   padding: 10px 0; 
+  border-bottom: 1px solid darkred;
+  z-index: 150;
 }
 
-.newTask {
-  background: #cccccc;
-  position: fixed; 
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-  top: 0;
-  /*padding: 5% 2%;*/
-  margin: 10% 5%; 
-  z-index: 100;
-  width: 90%;
-  left: 0;
-  height: 75%;
-}
-
-.home {
+.Home {
   position: relative;
   font-size: 18px;
   color: red;
   font-weight: 750;
   text-decoration: none;
   margin: 5px;
+  flex-grow: 1;
+  display: flex;
 }
 
 .buttons a {
@@ -131,8 +81,6 @@ body {
 .buttons a:hover::before {
   width: 100%;
 }
-
-
 
 /*-------------Search Bar----------------*/
 .searchBar {

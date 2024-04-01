@@ -17,6 +17,7 @@ import Calendar from './calendar';
 import Settings from './Settings';
 import Help from './help';
 import Account from './account';
+import AddTask from './AddTask'
 import reportWebVitals from './reportWebVitals';
 
 const router = createBrowserRouter([
@@ -26,7 +27,10 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Home />,
+        element: <>
+          <AddTask />
+          <Home />
+        </>,
       },
       {
         path: "settings",
