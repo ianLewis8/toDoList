@@ -37,13 +37,14 @@ body {
 
 .navbar {
   grid-column: span 2;
-  background: #F20505;
+  background-image: linear-gradient(rgb(244, 69, 69), rgb(242,5,5,1));
+  /* background-image: rgb(242, 5, 5);  */
   position: sticky;
   justify-content: space-between;
   align-items: center;
   display: flex;
   padding: 10px 0; 
-  border-bottom: 1px solid darkred;
+  border-bottom: 1px solid #f29ba2;
   z-index: 150;
 }
 
@@ -55,7 +56,6 @@ body {
   text-decoration: none;
   margin: 5px;
   flex-grow: 1;
-  display: flex;
 }
 
 .buttons a {
@@ -74,7 +74,7 @@ body {
   left: 0;
   width: 0;
   height: 2px;
-  background: red;
+  background: white;
   transition: .3s;
 }
 
