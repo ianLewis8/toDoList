@@ -12,9 +12,11 @@ function App() {
           <Link to="/calendar"><div className='symbol'>calendar_month</div></Link>
         </nav>
 
-        <div className="searchBar">
-          <input type="text" placeholder="Search..." />
-          <button type="submit">Search</button>
+        <div className="searchContainer">
+          <input type="text" className="search" placeholder="Search..." />
+          <button type="submit">
+            <div className='symbol searchRed'>search</div>
+          </button>
         </div>
 
         <nav className="buttons">

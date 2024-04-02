@@ -83,30 +83,67 @@ body {
 }
 
 /*-------------Search Bar----------------*/
-.searchBar {
+.searchContainer {
   display: flex;
   align-items: center;
-}
-
-.searchBar input[type="text"] {
-  padding: 8px;
-  border: 1px solid #ccc;
+  background-color: white;
   border-radius: 4px;
-  margin-right: 5px;
+  padding: 2px;
+  height: 35px;
+  border: 1px solid black; 
+  box-shadow: 0 0 0 1px black;
 }
 
-.searchBar button {
-  padding: 8px 12px;
-  background-color: red;
-  color: white;
+.search {
+  &::placeholder{
+    color: transparent;
+  }
+}
+
+.searchContainer input[type="text"]:focus {
+  background-color: rgb(255, 255, 255); 
+  outline: none; 
+  color: lightgrey;
+}
+
+.searchContainer input[type="text"] {
   border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  margin-left: 8px;
+  width: 400px;
+  height: 24px;
 }
 
-.searchBar button:hover {
-  background-color: darkred;
+
+.searchContainer input[type="text"]:focus {
+  outline: none;
 }
+
+
+.searchContainer button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+
+.searchContainer button:focus {
+  outline: none;
+}
+
+.searchRed {
+  color: rgb(242, 5, 5, 1);
+  font-size: 30px;
+  transition: color 0.3s ease;
+}
+
+
 /*---------------------------------------*/
 
 
