@@ -5,7 +5,7 @@ import './home.css';
 function Home() {
   return (
     <div className="page Home">
-      
+      <div className='symbol'>home</div>
     </div>
   );
 }

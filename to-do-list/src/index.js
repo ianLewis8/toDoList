@@ -38,11 +38,17 @@ const router = createBrowserRouter([
       },
       {
         path: "tasklist",
-        element: <TaskList />
+        element: <>
+          <AddTask />
+          <TaskList />
+        </>,
       },
       {
         path: "calendar",
-        element: <Calendar /> 
+        element: <>
+          <AddTask />
+          <Calendar />
+        </>,
       },
       {
         path: "help", 
