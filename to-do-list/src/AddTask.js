@@ -1,4 +1,3 @@
-
 import './addTask.css';
 
 /* Add: Title, Due date, priority, category/tags, description, subtasks, attachments, status */
@@ -19,13 +18,14 @@ function AddTask() {
         <a>Due Date(Make only dates accepted)</a>
       </div>
       <div className="priority">
-      <a>Priority(Make selectable from 1-5 or something)</a>
+        <a>Priority(Make selectable from 1-5 or something)</a>
       </div>
       <div className="tags">
-      <a>Category(Add a few generic categories to pick from and then custom)</a>
+        <a>Category(Add a few generic categories to pick from and then custom)</a>
       </div>
       <div className="description">
-      <a>Description(Add text field to input description)</a>
+        <label for="desc" class="desc-label">Description</label>
+        <textarea class="desc-field" id="desc" name="desc" cols="40" rows="10"></textarea>
       </div>
       <div className="add-button">
         <button class="button-add" role="button"><div className='symbol small'>add</div>Add</button>
