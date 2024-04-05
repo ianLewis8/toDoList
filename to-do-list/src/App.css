@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 * {
   font-family: "Segoe", sans-serif;
   box-sizing: border-box;
@@ -114,3 +115,162 @@ body {
 
 
 
+=======
+* {
+  font-family: "Segoe", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+body {
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center; 
+}
+
+.App {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  flex-direction: column;
+  margin: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100vh;
+}
+
+.page {
+  grid-column: span 2;
+  overflow: auto;
+}
+
+.navbar {
+  grid-column: span 2;
+  background-image: linear-gradient(rgb(244, 69, 69), rgb(242,5,5,1));
+  /* background-image: rgb(242, 5, 5);  */
+  position: sticky;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding: 10px 0; 
+  border-bottom: 1px solid #f29ba2;
+  z-index: 150;
+}
+
+.Home {
+  position: relative;
+  font-size: 18px;
+  color: red;
+  font-weight: 750;
+  text-decoration: none;
+  margin: 5px;
+  flex-grow: 1;
+}
+
+.buttons a {
+  position: relative;
+  font-size: 18px;
+  color: red;
+  font-weight: 750;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+.buttons a::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: .3s;
+}
+
+.buttons a:hover::before {
+  width: 100%;
+}
+
+/*-------------Search Bar----------------*/
+.searchContainer {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 4px;
+  padding: 2px;
+  height: 35px;
+  border: 1px solid black; 
+  box-shadow: 0 0 0 1px black;
+}
+
+.search {
+  &::placeholder {
+  color: rgb(63, 62, 62);
+  }
+  
+  &:focus::placeholder {
+  color: transparent;
+  }
+  }
+
+.searchContainer input[type="text"]:focus {
+  background-color: rgb(255, 255, 255); 
+  outline: none; 
+  color: rgb(0, 0, 0);
+}
+
+.searchContainer input[type="text"] {
+  border: none;
+  margin-left: 8px;
+  width: 400px;
+  height: 24px;
+}
+
+
+.searchContainer input[type="text"]:focus {
+  outline: none;
+}
+
+
+.searchContainer button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+
+.searchContainer button:focus {
+  outline: none;
+}
+
+.searchRed {
+  color: rgb(242, 5, 5, 1);
+  font-size: 30px;
+  transition: color 0.3s ease;
+}
+
+
+/*---------------------------------------*/
+
+
+
+
+
+
+>>>>>>> Stashed changes
