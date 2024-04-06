@@ -41,7 +41,7 @@ const Calendar = () => {
       <div className="calendar">
         {days.map(day => (
           <button key={day} className="calendar-day" onClick={() => onDayClick(day)}>
-            {day}
+            <span>{day}</span>
           </button>
         ))}
       </div>
