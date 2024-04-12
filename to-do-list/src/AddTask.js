@@ -1,34 +1,43 @@
 import './addTask.css';
 
-/* Add: Title, Due date, priority, category/tags, description, subtasks, attachments, status */
-
 function AddTask() {
   return (
     <div className="newTask">
       <div className="topText">
         <a>Add Task</a>
       </div>
-      <div className="title">
-        <div class="form__group field">
-          <input type="input" class="form__field" placeholder="Task Name" name="taskName" id='taskName' required />
-          <label for="taskName" class="form__label">Task Name</label>
+      <div className="form">
+        <div className="form__group field">
+          <input type="input" className="form__field" placeholder="Task Name" name="taskName" id='taskName' required />
+          <label htmlFor="taskName" className="form__label">Task Name</label>
         </div>
-      </div>
-      <div className="dueDate">
-        <a>Due Date(Make only dates accepted)</a>
-      </div>
-      <div className="priority">
-        <a>Priority(Make selectable from 1-5 or something)</a>
-      </div>
-      <div className="tags">
-        <a>Category(Add a few generic categories to pick from and then custom)</a>
-      </div>
-      <div className="description">
-        <label for="desc" class="desc-label">Description</label>
-        <textarea class="desc-field" id="desc" name="desc" cols="40" rows="10"></textarea>
-      </div>
-      <div className="add-button">
-        <button class="button-add" role="button"><div className='symbol small'>add</div>Add</button>
+        <div className="form__group field">
+          <input type="date" className="form__field" placeholder="Due Date" name="dueDate" id='dueDate' required />
+          <label htmlFor="dueDate" className="form__label">Due Date</label>
+        </div>
+        <div className="form__group field">
+          <select className="form__field" name="priority" id='priority' required>
+            <option value="">Select Priority</option>
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+          </select>
+          <label htmlFor="priority" className="form__label">Priority</label>
+        </div>
+        <div className="form__group field">
+          <input type="text" className="form__field" placeholder="Category" name="category" id='category' />
+          <label htmlFor="category" className="form__label">Category</label>
+        </div>
+        <div className="form__group field description">
+          <textarea className="form__field desc-field" id="description" name="description" placeholder="Description" rows="4" required></textarea>
+          <label htmlFor="description" className="form__label">Description</label>
+        </div>
+        <div className="add-button">
+          <button className="button-add" role="button">
+            <div className='symbol small'>add</div>
+            Add
+          </button>
+        </div>
       </div>
     </div>
   );
