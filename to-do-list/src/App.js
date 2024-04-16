@@ -25,11 +25,6 @@ function App() {
           <Link to="/account"><div className='symbol'>account_circle</div></Link>
         </nav>
       </div>
-
-      {/* Content */}
-      <div className="page">
-        <AddTask />
-      </div>
       <Outlet />
     </div>
   );

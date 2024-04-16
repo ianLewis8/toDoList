@@ -1,7 +1,7 @@
 .newTask {
   background: #ffe8e8;
   display: grid;
-  grid-template-rows: 40px 80px 50px 50px 50px 200px 75px;
+  grid-template-rows: 40px 70px 70px 100px 200px 75px;
   top: 0;
   padding: 18px 25px;
   box-shadow: rgba(0, 0, 0.1, 0.2) 1px 2px 4px;
@@ -9,6 +9,11 @@
   z-index: 200;
   width: 440px;
   
+}
+
+.title,.dueDate {
+  align-items: top;
+
 }
 
 .topText {
@@ -33,6 +38,7 @@
   margin-top: 10px;
   width: 50%;
 }
+
 
 .form__field {
   width: 370px;
@@ -140,8 +146,74 @@
   
 }
 
+/* .desc-label {
 
+} */
 
 textarea {
   resize: none;
+}
+
+.duedate-and-time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.date-field, .time-field {
+  border-radius: 5px;
+    padding: 5px;
+    font-size: large;
+    font-variant-caps: all-small-caps;
+}
+
+.priority {
+  display: grid;
+  grid-template-rows: 25px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.priority-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.priority button {
+  flex-grow: 1;
+  border: 0;
+  background: white;
+  font-size: 20px;
+}
+
+
+
+.b1 {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.b1.selected {
+  background: lightgreen;
+}
+
+.b2.selected {
+  background: greenyellow;
+}
+
+.b3.selected {
+  background: yellow;
+}
+
+.b4.selected  {
+  background: salmon;
+}
+
+.b5.selected {
+  background: red;
+}
+
+.b5 {
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
