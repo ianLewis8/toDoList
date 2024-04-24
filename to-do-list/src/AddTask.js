@@ -46,7 +46,7 @@ function AddTask() {
       </div>
       <div className="description">
         <label for="desc" class="desc-label">Description</label>
-        <textarea class="desc-field" id="desc" name="desc" cols="40" rows="10"></textarea>
+        <textarea placeholder="Enter Description..." class="desc-field" id="desc" name="desc" cols="40" rows="10"></textarea>
       </div>
       <div className="add-button">
         <button class="button-add" role="button"><div className='symbol small'>add</div>Add</button>
