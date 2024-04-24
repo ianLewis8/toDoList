@@ -184,57 +184,5 @@ body {
   transition: color 0.3s ease;
 }
 
-.calendar {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr); /* 7 days for a week */
-  gap: 10px;
-  padding: 20px;
-}
-
-.calendar-day {
-  position: relative;
-  width: 100%;
-  background-color: #f0f0f0;
-  border: none;
-  cursor: pointer;
-  overflow: hidden;
-}
-
-.calendar-day::after {
-  content: "";
-  display: block;
-  padding-bottom: 100%; /* This creates a square */
-}
-
-.calendar-day span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.calendar-day:hover {
-  background-color: #e0e0e0;
-}
-
-.calendar-navigation button {
-  margin: 0 10px;
-  padding: 5px 10px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.calendar-navigation button:hover {
-  background-color: #0056b3;
-}
-
-
 
 /*---------------------------------------*/

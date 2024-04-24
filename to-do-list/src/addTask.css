@@ -8,7 +8,6 @@
   box-sizing: border-box;
   z-index: 200;
   width: 440px;
-  
 }
 
 .title,.dueDate {
@@ -146,12 +145,12 @@
   
 }
 
-.desc-label {
-
-}
-
 textarea {
   resize: none;
+  font-size: 1rem;
+  line-height: 1.5em;
+  font-family: 'Roboto';
+  padding: 5px;
 }
 
 .duedate-and-time {
@@ -181,12 +180,15 @@ textarea {
 
 .priority button {
   flex-grow: 1;
-  border: 0;
+  border:1px solid white;
   background: white;
   font-size: 20px;
 }
 
-
+.priority a {
+  font-weight: bolder;
+  font-size: large;
+}
 
 .b1 {
   border-top-left-radius: 25px;
@@ -194,26 +196,56 @@ textarea {
 }
 
 .b1.selected {
-  background: lightgreen;
+  background: green;
+  border: 1px solid black;
+}
+
+.b1:hover {
+  border: 1px solid black;
 }
 
 .b2.selected {
   background: greenyellow;
+  border: 1px solid black;
+}
+
+.b2:hover {
+  border: 1px solid black;
 }
 
 .b3.selected {
   background: yellow;
+  border: 1px solid black;
+}
+
+.b3:hover {
+  border: 1px solid black;
 }
 
 .b4.selected  {
   background: salmon;
+  border: 1px solid black;
+}
+
+.b4:hover  {
+  border: 1px solid black;
 }
 
 .b5.selected {
   background: red;
+  border: 1px solid black;
+}
+
+.b5:hover {
+  border: 1px solid black;
 }
 
 .b5 {
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
+}
+
+.description label {
+  font-weight: bolder;
+  font-size: large;
 }
