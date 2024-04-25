@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import './calendar.css'
 
 const Calendar = () => {
   const today = new Date();
   const [currentMonth, setCurrentMonth] = useState(today.getMonth());
   const [currentYear, setCurrentYear] = useState(today.getFullYear());
-
 
   const setCurrentMonthName = () => {
     
@@ -54,12 +54,15 @@ const Calendar = () => {
     }
   };
 
+  const location = useLocation();
+
   // Handler for day button click
   const onDayClick = (day) => {
     console.log(`Clicked on day: ${day}`);
   };
 
   return (
+    <div>{location.state.name}</div>
     <div className="calendar-container">
       <div className="calendar-bar">
         <div><span>{`${monthName}, ${currentYear}`}</span></div>

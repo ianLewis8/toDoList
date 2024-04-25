@@ -3,9 +3,6 @@ import ReactDOM from 'react-dom/client';
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
-  Link,
-  Outlet,
 } from "react-router-dom";
 
 import './index.css';
