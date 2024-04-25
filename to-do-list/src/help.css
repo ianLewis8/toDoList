@@ -1,0 +1,23 @@
+.Help {
+  padding: 20px;
+}
+
+.Help h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.Help p {
+  font-size: 16px;
+  color: #666;
+}
+
+.Help ul {
+  list-style-type: circle;
+  padding-left: 20px;
+  color: #666;
+}
+
+.Help li {
+  font-size: 14px;
+}
